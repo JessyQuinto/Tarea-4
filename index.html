@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Musical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Encuesta de Gustos Musicales</h1>
+    
+    <div id="formulario">
+        <h2>Agregar Persona</h2>
+        <form id="personaForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br>
+            
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" required><br>
+            
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" required><br>
+            
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" required><br>
+            
+            <label for="ciudadResidencia">Ciudad de Residencia:</label>
+            <input type="text" id="ciudadResidencia" required><br>
+            
+            <label for="ciudadOrigen">Ciudad de Origen:</label>
+            <input type="text" id="ciudadOrigen" required><br>
+            
+            <h3>Canciones Favoritas</h3>
+            <label for="cancion1">Artista y Canción 1:</label>
+            <input type="text" id="cancion1" required><br>
+            
+            <label for="cancion2">Artista y Canción 2:</label>
+            <input type="text" id="cancion2"><br>
+            
+            <label for="cancion3">Artista y Canción 3:</label>
+            <input type="text" id="cancion3"><br>
+            
+            <button type="button" onclick="agregarPersona()">Agregar Persona</button>
+        </form>
+    </div>
+
+    <div id="consulta">
+        <h2>Consultar Persona por Posición</h2>
+        <label for="posicion">Posición en la lista:</label>
+        <input type="number" id="posicion" min="0" required><br>
+        <button type="button" onclick="consultarPersona()">Consultar</button>
+
+        <div id="resultadoConsulta"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
